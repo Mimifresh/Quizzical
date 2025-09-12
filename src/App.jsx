@@ -31,7 +31,7 @@ function App() {
         console.log(shuffledData)
         setQuizData(shuffledData)
       } catch (error) {
-        console.error('There has been a problem with your fetch operation:', error)
+        console.error('There has been a problem with the fetch operation:', error)
       }
       finally {
         setLoading(false)
