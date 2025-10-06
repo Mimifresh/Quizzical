@@ -5,14 +5,22 @@ body{
   background-repeat: no-repeat;
   color: rgba(41, 50, 100, 1);
   font-family: "inter", sans-serif;
-  height: 100vh;
+  min-height: 100vh;
+  width: 100%;
+  overflow: hidden;
 }
 .landing-page {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 100vh;
+  min-height: 100vh;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.questions-container{
+  width: 100%;
 }
 
 .quiz-container{
@@ -26,11 +34,15 @@ body{
 .question-card{
   padding: 1em;
   border-bottom: 1px solid rgba(219, 222, 240, 1);
+  width: 100%;
 }
 
 .question-card > ul {
   list-style: none;
   display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 0;
 }
 .question-card > ul > li {
   cursor: pointer;
